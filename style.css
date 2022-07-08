@@ -1,3 +1,8 @@
+/* *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
 .about .about-img .about-img-wrapper img {
     height:60%;
     width: 70%;
@@ -47,7 +52,66 @@
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: bold;
     }
+    .skill-body{
+      margin-bottom: -12px;
+      font-style: italic;      
+    }
 
+    .nav-item::after{
+      content:'';
+      display:block;
+      width:0px;
+      height:2px;
+      background:white;
+      transition: 0.2s;
+    }
+    .nav-item:hover::after{
+      width:100%;
+    }
+
+    .teks-berjalan li span{
+      position: relative;
+      margin: 5px 0;
+      line-height: 90px;
+    }
+
+    .teks-berjalan li span::after{
+      position: absolute; 
+      content: " ";
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #34495e;
+      border-left: 2px solid #e74c3c;
+      animation: typing 3s steps(10) infinite;
+    }
+    @keyframes typing {
+      40%, 60%{
+        left: calc(100% + 30px);
+      }
+      100%{
+        left: 0;
+      }
+    } */
+
+    .animasi-teks{
+      color: black; 
+      font-family: "arial";
+      font-size: 35px;
+      margin: 10px 0 0 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      animation: animtext 4s steps(80, end); 
+      transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+    @keyframes animtext { 
+      from {
+        width: 0;
+        transition: all 2s ease-in-out;
+      } 
+    }
+    
   @media only screen  and (min-width:320px) and (max-width:980px){
     .img-thumbnail{
       display: none;
