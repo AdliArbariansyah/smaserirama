@@ -44,6 +44,10 @@
       transform: translate(-50%, -50%);
       font: 14px arial;
     }
+    .service{
+      border-radius: 20px;
+      box-shadow: 2px 2px rgba(0,0,0,0.8);
+    }
     .service-box{
       background-color: #fff;
       padding: 2.5rem 1.3rem;
@@ -151,7 +155,44 @@
       background-color: #17a2b8;
       margin: 0 auto;
     }
+    .education{
+      border-radius: 20px;
+      box-shadow: 2px 2px rgba(0,0,0,0.8);
+    }
+    .swiper{
+      height: 450px;
+      margin-bottom: 20px;
+    }
+    .swiper-slide{
+      background: #17a2b8;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      border-radius: 30px;
+    }
+    .p-swiper{
+      position: absolute;
+      margin-top: 300px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .p-swiper1{
+      position: absolute;
+      margin-top: 350px;
+      color: rgb(254, 255, 254);
+      font-size: 15px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .swiper-button-next{
+      color: white;
+    }
     
+    .organizational{
+      border-radius: 20px;
+      box-shadow: 2px 2px rgba(0,0,0,0.8);
+    }
   @media only screen  and (min-width:320px) and (max-width:980px){
     .img-thumbnail{
       display: none;
@@ -177,6 +218,14 @@
       font-size: 30px;
       font-weight: bold;
     }
+    .education-h1{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .organizational-h1{
+      font-size: 30px;
+      font-weight: bold;
+    }
     .service-h1{
       font-size: 30px;
       font-weight: bold;
@@ -197,5 +246,57 @@
         font-size: 25px;
         font-weight: bold;
         font-style: italic;
+    }
+
+    /* gambar education responsive */
+    .gambar-swiper{
+      width: 150px;
+      height: 150px;
+    }
+    .p-swiper-title{
+      position: absolute;
+      margin-top: 300px;
+      font-size: 15px;
+      font-weight: bold;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .p-swiper-title-sma{
+      position: absolute;
+      margin-top: 300px;
+      font-size: 12px;
+      font-weight: bold;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .p-swiper1-description{
+      position: absolute;
+      margin-top: 350px;
+      font-size: 10px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .gambar-swiper-uir{
+      width: 150px;
+      height: 170px;
+
+    }
+    /* gambar organizational */
+    .p-swiper-title-long{
+      position: absolute;
+      margin-top: 300px;
+      font-size: 10px;
+      font-weight: bold;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .p-swiper1-description-long{
+      position: absolute;
+      margin-top: 350px;
+      font-size: 10px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .p-swiper-title-verylong{
+      position: absolute;
+      margin-top: 300px;
+      font-size: 8px;
+      font-weight: bold;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
   }
