@@ -8,14 +8,14 @@ if (isset($_POST['submit'])) {
         echo "
         <script>
             alert('Data Berhasil ditambahkan!');
-            document.location.href = 'add_portofolio.php';
+            document.location.href = 'portofolio.php';
         </script>
         ";
     } else {
         echo "
         <script>
             alert('Data Gagal ditambahkan!');
-            document.location.href = 'add_portofolio.php';
+            document.location.href = 'portofolio.php';
         </script>
         ";
     }
@@ -56,6 +56,7 @@ if (isset($_POST['submit'])) {
                     <label for="gambar">Upload File</label>
                     <input type="file" name="gambar" class="form-control form-rounded" id="gambar" required>
                 </div>
+                <input type="hidden" name="tanggal" id="tanggal" value="<?php echo date('Y-m-d'); ?>">
 
 
                 <div class="form-group">

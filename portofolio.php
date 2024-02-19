@@ -3,6 +3,7 @@ require 'functions.php';
 
 $portofolio = query("SELECT * FROM portofolio");
 
+
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +29,7 @@ $portofolio = query("SELECT * FROM portofolio");
       $(".preloader").fadeOut("slow");
     });
   </script>
-  <title>Adli Arbariansyah - Portofolio</title>
+  <title>SMA Serirama YLPI Riau - Portofolio</title>
   <link rel="icon" href="src/img/Adli Arbariansyah.png">
 </head>
 
@@ -44,7 +45,7 @@ $portofolio = query("SELECT * FROM portofolio");
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info mb-3 margin-navbar">
     <div class="container">
-      <marquee width="15%" direction="left"><a class="navbar-brand" href="#">ADLI ARBARIANSYAH</a></marquee>
+      <marquee width="15%" direction="left"><a class="navbar-brand" href="#">SMA SERIRAMA YLPI RIAU</a></marquee>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav " aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -65,22 +66,20 @@ $portofolio = query("SELECT * FROM portofolio");
     <div class="container">
       <div class="row mb-3  pt-5">
         <div class="col text-center">
-          <h1 class="font-h1-portofolio">PORTFOLIO</h1>
+          <h1 class="font-h1-portofolio">GALERY</h1>
         </div>
       </div>
 
       <div class="col text-center">
-        <h2 class="font-h2-portofolio">My<strong style="color: #17a2b8;"> Sertifikat </strong></h2>
+        <h2 class="font-h2-portofolio">My<strong style="color: #17a2b8;"> KEGIATAN </strong></h2>
       </div>
-
-
       <div class="row mb-4">
-        <?php foreach ($portofolio as $row) : ?>
+        <?php foreach ($portofolio as $kegiatan) : ?>
           <div class="col-md-4">
             <div class="card">
-              <img class="card-img-top" src="src/img/<?= $row["gambar"]; ?>" alt="Card image cap">
+              <img class="card-img-top" src="src/img/<?php echo $kegiatan['gambar']; ?>" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text"><?= $row["keterangan"]; ?></p>
+                <p class="card-text"><?php echo $kegiatan['keterangan']; ?></p>
               </div>
             </div>
           </div>
@@ -88,91 +87,7 @@ $portofolio = query("SELECT * FROM portofolio");
       </div>
 
       <!--End Certificate-->
-      <!-- Awal My Desain -->
-      <div class="col text-center mt-5">
-        <h2 class="font-h2-portofolio">My <strong style="color: #17a2b8;">Desain</strong></h2>
-      </div>
 
-
-      <div class="row mb-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="src/img/Spanduk Rossi Audio Ukuran 1,5M X 1,5 M.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Desain Spanduk</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="src/img/Sertifikat Penghargaan.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text ">Desain Sertifikat</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md">
-          <div class="card">
-            <img class="card-img-top" src="src/img/Adli Arbariansyah_KAMMI.2022_Universitas Islam Riau_Pemuda Sebagai Tonggak Agama dan Wajah Bangsa.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Desain Lomba Poster KAMMI Pekanbaru (Juara II)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mb-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="src/img/Sahabat Kode.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text ">Desain Logo ( Sahabat Kode )</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="src/img/Desain Poster Promosi.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text ">Desain Promosi</p>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="src/img/KPA KHOARSIS ADVENTURE.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text" style="font-weight: bold">Desain Logo ( KHOARSIS )</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row mb-4">
-        <div class="col-md">
-          <div class="card">
-            <img class="card-img-top" src="src/img/Promosi CV.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Desain CV ( Curriculum Vitae )</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card">
-            <img class="card-img-top" src="src/img/Desain Promosi Poster.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text ">Desain CV ( Curriculum Vitae )</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 

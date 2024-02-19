@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $user = "root";
 $password = "";
-$database = "db_adliarbariansyah";
+$database = "db_smaserirama";
 
 $koneksi = mysqli_connect($hostname, $user, $password, $database);
 

@@ -24,7 +24,7 @@
   z-index: -1;
 }
 .jumbotron {
-  background-image: url('src/img/resul-mentes-DbwYNr8RPbg-unsplash.jpg');
+  background-image: url('src/img/fotosekolah.JPG');
   background-size: cover;
 }
 .preloader {
@@ -146,7 +146,24 @@
   background-color: #cacdd6;
   z-index: -1;
 }
+.text-stroke-red{
+  color: red;
+  text-shadow: 
+        -2px -2px 0 #fff,  
+         2px -2px 0 #fff,
+        -2px  2px 0 #fff,
+         2px  2px 0 #fff;
+}
 
+.text-stroke-black{
+  
+  color: black;
+  text-shadow: 
+        -2px -2px 0 #fff,  
+         2px -2px 0 #fff,
+        -2px  2px 0 #fff,
+         2px  2px 0 #fff;
+}
 .line {
   width: 40px;
   height: 5px;

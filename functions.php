@@ -4,7 +4,7 @@
     $hostname = "localhost";
     $user = "root";
     $password = "";
-    $database = "db_adliarbariansyah";
+    $database = "db_smaserirama";
 
     $koneksi = mysqli_connect($hostname, $user, $password, $database);
     if (!$koneksi) {
@@ -31,18 +31,21 @@
 
 
         $keterangan = htmlspecialchars($data["keterangan"]);
+        $tanggal = $data["tanggal"];
         // upload gambar 
         $gambar = upload();
         if (!$gambar) {
             return false;
         }
 
-        $query = "INSERT INTO portofolio VALUES ('', '$keterangan', '$gambar')";
+        $query = "INSERT INTO portofolio VALUES ('', '$keterangan', '$gambar','$tanggal')";
 
         mysqli_query($koneksi, $query);
 
         return mysqli_affected_rows($koneksi);
     }
+
+
 
 
     function upload()
@@ -75,7 +78,7 @@
 
         // cek jika ukurannya terlalu besar
 
-        if ($ukuranFile > 5000000) {
+        if ($ukuranFile > 10000000) {
             echo "
                 <script>
                     alert ('Ukuran Gambar terlalu Besar!');
